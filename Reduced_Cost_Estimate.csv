@@ -1,0 +1,18 @@
+Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),Amazon EC2,0,781.4767,9377.72,USD,"Operating system (Linux), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (30 GB), Snapshot Frequency (Daily), Amount changed per snapshot (3 GB), Data Transfer, Data transfer cost (92.07), Advance EC2 instance (t2.medium), Pricing strategy (On-Demand and Reserved 1 Year  None upfront)"
+My Estimate,US East (Ohio),Elastic Load Balancing,0,616.85,7402.2,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),S3 Standard,0,1510.88,18130.56,USD,S3 Standard storage (60 TB per month)
+My Estimate,US East (Ohio),S3 Standard - Infrequent Access,0,256.11,3073.32,USD,S3 Infrequent Access storage (20 TB per month)
+My Estimate,US East (Ohio),Data Transfer,0,1791.91,21502.92,USD,"Data Transfer, Data transfer cost (1791.91)"
+My Estimate,US East (Ohio),Amazon RDS for MySQL,0,1286.152,15433.82,USD,"Quantity (2), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Instance type (db.m5.4xlarge)"
+,,,,,,,
+,,,,,,,
+,,,,,,,
+"AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,
+,,,,,,,
+,,,,,,,
+"My biggest overall cost is data transfer out from S3/CloudFront which is how user uploaded pictures and text are presented in the feed. So, the best way to save costs ",,,,,,,
+"is to limit the data transfer out to the internet. In this case, I've assumed that the application has reduced the length of time that user uploads ",,,,,,,
+"are stored in S3 and accessible, which led to reduced S3 storage and transfer out costs. I've also taken some additional minor risk by reducing the EC2 instances to T2.medium",,,,,,,
+and slightly reduced the size of the MySQL database assuming that slightly less user data could also be maintained and exchanged without significantly changing the user ,,,,,,,
+experience.,,,,,,,
